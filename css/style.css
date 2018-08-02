@@ -1,0 +1,441 @@
+@charset "utf-8";
+
+/*Šî–{ƒŒƒCƒAƒEƒg*/
+@import url(reset.css);
+@import url(common.css);
+body {
+	margin: 0 auto 0 auto;
+	font-family: "ƒƒCƒŠƒI", Meiryo, "ƒqƒ‰ƒMƒmŠpƒS Pro W3", "Hiragino Kaku Gothic Pro", "‚l‚r ‚oƒSƒVƒbƒN", "MS PGothic", sans-serif;
+	font-size: 100%;
+	background-color: #ffffff;
+	line-height: 1.5;
+	width: 1260px;
+}
+a {
+	color: #202d74;
+}
+header, nav, #visual, #contents, #footer_main, #policy {
+	margin: 0 auto 0 auto;
+	width:1260px;
+}
+header {
+	overflow: hidden;
+
+}
+header h1 {
+	margin: 0;
+	padding: 20px 10px;
+	float: left;
+}
+header h1 a {
+	overflow: hidden;
+	display: block;
+	padding-top: 26px;
+	height: 0;
+	width: 140px;
+	background-image: url("../images/logo.png");
+}
+#sub_header {
+	height: 65px;
+	width:620px;
+	float:right;
+}
+.position {
+	position: absolute;
+	right: 0;
+	bottom: 0;
+}
+#sub_header .sub_float {
+	float: left;
+	margin: 10px;
+	position: relative;
+	top: 25px;
+}
+#sub_header .sub_float dl {
+
+}
+#sub_header .sub_float dl dt, dl dd {
+	float:left;
+	margin-left: 5px;
+}
+
+.sub_float dd {
+	position: relative;
+	bottom: 4px;
+}
+#search form p a {
+	margin-right: 7px;
+}
+input[type="text"] {
+	height: 25px;
+	margin-right: 0;
+	padding: 0;
+}
+input[type="image"] {
+	margin-left: 0;
+	padding: 0;
+}
+#search {
+	margin-top: -15px !important;
+}
+nav {
+	margin-top: 10px;
+}
+nav ul {
+	overflow: hidden;
+	list-style-type: none;
+}
+nav ul li  {
+	float: left;
+	width: 252px;
+	height: 50px;
+}
+nav ul li a {
+	overflow: hidden;
+	display: block;
+	padding-top: 44px;
+	height: 0;
+}
+nav ul li#nav_kojin a{
+	background-image: url(../images/nav_kojin.png);
+}
+nav ul li#nav_houjin a{
+	background-image: url(../images/nav_houjin.png);
+}
+nav ul li#nav_ir a{
+	background-image: url(../images/nav_ir.png);
+}
+nav ul li#nav_recruit a{
+	background-image: url(../images/nav_recruit.png);
+}
+nav ul li#nav_seraku a{
+	background-image: url(../images/nav_seraku.png);
+}
+#visual ul {
+	overflow: hidden;
+	margin: 0 0 20px 0;
+	padding-left: 0;
+	list-style: none
+}
+#visual ul li {
+	float: left;
+	width: 420px;
+}
+#visual ul li a {
+	overflow: hidden;
+	display: block;
+	padding-top: 100px;
+	height: 0;
+}
+#visual ul li#visual_thumb1 a {
+	background-image: url(../images/main01_thumb.png);
+}
+#visual ul li#visual_thumb2 a {
+	background-image: url(../images/main02_thumb.png);
+}
+#visual ul li#visual_thumb3 a {
+	background-image: url(../images/main03_thumb.png);
+}
+#contents {
+	overflow: hidden;
+	margin: 50px 0 70px 0;
+}
+/*-----スライダー矢印-----*/
+#visual .slider {
+  			position: relative;
+  			z-index: 1;
+  		}
+.slide-arrow_prev-arrow {
+			display: block;
+			position: absolute;
+			top: 50%;
+			left: 10px;
+			width: 32px;
+			height: 48px;
+			cursor: pointer;
+			z-index: 5;
+		}
+.slide-arrow_next-arrow {
+			position: absolute;
+			top: 50%;
+			right: 10px;
+			display: block;
+			width: 32px;
+			height: 48px;
+			cursor: pointer;
+			z-index: 5;
+		}
+
+/*-----メインコンテンツ-----*/
+#contents {
+	overflow: hidden;
+	margin-bottom: 100px
+}
+#main {
+	float: right;
+	width: 900px; 
+}
+#main_1 {
+	overflow: hidden;
+	margin-bottom: 0px
+}
+#main_1 h2 {
+	border-left: 15px solid #1e8796;
+	border-bottom: 1px solid #1e8796;
+	padding-left: 15px;
+	color: #202d74;
+	margin-bottom: 30px
+}
+#main_1 ul {
+	list-style: none;
+	overflow: hidden;
+}
+#main_1 ul li {
+	float: left;
+	margin-bottom: 20px;
+	width: 175px;
+}
+#main_1 ul li a {
+	text-decoration: none;
+}	
+.menu  {
+	width:350px;
+	float: left;
+	margin-bottom: 45px;
+	padding-left: 50px;
+}
+/*-----タブ切り替え-----*/
+#content_2, #content_3, #content_4 {
+	display: none;
+}
+/*-----ここまでタブ切り替え-----*/
+#main_2 {
+	overflow: hidden;
+	width:900px;
+	padding-left: 50px;
+	margin-bottom: 100px;
+}
+#main_2　ul {
+	overflow: hidden;
+	list-style-type: none;
+	padding-left: 50px;
+}
+#main_2 ul li {
+	float: left;
+	overflow: hidden;
+	width: 213px;
+	margin-bottom: 20px;
+}
+#main_2 ul li a {
+	overflow: hidden;
+	display: block;
+	padding-top: 63px;
+	height: 0;
+}
+#main_2 ul li#new_btn a {
+	background-image: url(../images/new_ng_btn.png);
+}
+#main_2 ul li#releas_btn a {
+	background-image: url(../images/releas_ng_btn.png);
+}
+#main_2 ul li#canpan_btn a {
+	background-image: url(../images/canpan_ng_btn.png);
+}
+#main_2 ul li#shirase_btn a {
+	background-image: url(../images/shirase_ng_btn.png);
+}
+#main_2 ul li#new_btn a.active {
+	background-image: url(../images/new_ok_btn.png);
+}
+#main_2 ul li#releas_btn a.active {
+	background-image: url(../images/releas_ok_btn.png);
+}
+#main_2 ul li#canpan_btn a.active {
+	background-image: url(../images/canpan_ok_btn.png);
+}
+#main_2 ul li#shirase_btn a.active {
+	background-image: url(../images/shirase_ok_btn.png);
+}
+#main_2 dl {
+	float: left;
+	padding: 20px 0 10px 0px;
+	overflow: hidden;
+	font-size: 85%;
+}
+#main_2 dl dt, #main_2 dl dd {
+	float: left;
+	padding-right: 40px
+}
+#main_2 dl dt {
+	width: 100px;
+}
+#main_2 dl dd {
+	padding-left: 40px;
+}
+#main_2 time {
+	font-size: 90%;
+}
+.shirase, .canpan, .releas {
+	overflow: hidden;
+	padding-top: 25px;
+	height: 0;
+}
+.shirase {
+	background-image: url(../images/icon_shirase.png);
+}
+.canpan {
+	background-image: url(../images/icon_canpan.png);
+}
+.releas {
+	background-image: url(../images/icon_releas.png);
+}
+
+/*-----サブコンテンツ-----*/
+#sub h2 {
+	text-align: center;
+	color: #202d74;
+}
+#sub #seraku_login {
+	text-align: center;
+	margin-bottom: 50px;
+}
+#sub {
+	float: left;
+	width: 360px;
+	margin-bottom: : 100px;
+}
+#sub ul {
+	overflow: hidden;
+}
+#sub #service {
+	margin-bottom: 50px;
+}
+#sub #login li {
+	width: 360px
+	height: 50px;
+}
+#sub #login li a {
+	overflow: hidden;
+	display: block;
+	padding-top: 50px;
+	height: 0;
+	margin-bottom: 6px;
+}
+#sub #login li#login_service a {
+	background-image: url(../images/login_btn.png);
+}
+#sub #login li#login_first a {
+	background-image: url(../images/login_first_btn.png);
+}
+#sub #service {
+	overflow: hidden;
+	margin: 0  0 50px 0;
+	padding-left: 0;
+	list-style-type: none;
+}
+#sub #service li {
+	float: left;
+	width: 114px;
+	height: 114px;
+	margin:3px;
+}
+#sub #service li a {
+	overflow: hidden;
+	display: block;
+	padding-top: 114px;
+	height: 0;
+}
+#sub #service li#service_tenpo a {
+	background-image: url(../images/service_tenpo.png);
+}
+#sub #service li#service_shiryo a {
+	background-image: url(../images/service_shiryo.png);
+}
+#sub #service li#service_kinri a {
+	background-image: url(../images/service_kinri.png);
+}
+#sub #service li#service_tesuryo a {
+	background-image: url(../images/service_tesuryo.png);
+}
+#sub #service li#service_sitsumon a{
+	background-image: url(../images/service_sitsumon.png);
+}
+#sub #service li#service_kakakuichiran a {
+	background-image: url(../images/service_kakakuichiran.png);
+}
+#sub #service_2 {
+	margin: 0  0 30px 0;
+	padding-left: 0;
+	list-style-type: none;
+}
+#sub #service_2_1 {
+	margin-bottom: 30px;
+}
+#sub #service_2 li {
+	width: 360px;
+	height: 50px;
+	margin: 3px;
+}
+#sub #service_2 li a {
+	overflow: hidden;
+	display: block;
+	padding-top: 50px;
+	height: 0;
+}
+#sub #service_2 li#kaisetsu a {
+	background-image: url(../images/kaisetsu.png);
+}
+#sub #service_2 li#news a {
+	background-image: url(../images/news.png);
+}
+#sub #service_2 li#sagi a {
+	background-image: url(../images/sagi.png);
+}
+#sub #service_2 li#cm a {
+	background-image: url(../images/cm.png);
+}
+#sub #service_2 li#roan a {
+	background-image: url(../images/roan.png);
+}			
+/*フッター*/
+footer {
+	margin-top: 50px;
+}
+#footer_main{
+	overflow: hidden;
+	background-color: #eeeeee;
+	height: 355px;
+	width: 1260px;
+	margin: 0;
+	padding:0;
+}
+.footer_menu {
+	float: left;
+	margin: 50px 0 50px 50px;
+	width: 200px;
+}
+.footer_menu h2 {
+	color: #202d74;
+}
+.footer_menu ul {
+	list-style-type: none;
+}
+#policy ul {
+	overflow: hidden;
+	list-style:none;
+	margin: 40px auto 40px auto;
+	padding-left: 20px;
+}
+#policy ul li a {
+	float: left;
+	margin-right: 50px;
+}
+footer p {
+	width: 100%;
+	text-align: center;
+	background-color: #202d74;
+	color: #ffffff;
+	height: 50px;
+	line-height: 50px;
+}
+	
